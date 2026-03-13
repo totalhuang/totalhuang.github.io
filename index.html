@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>黄涛 | Tao Huang</title>
+  <meta name="description" content="Tao Huang (黄涛) – Senior student at Tianjin University. Research interests: LLM, MLLM, Diffusion Models. Interning at Tencent Hunyuan." />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- ========== NAVBAR ========== -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a class="nav-logo" href="#hero">TH</a>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#news">News</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ========== HERO ========== -->
+  <section class="hero" id="hero">
+    <div class="hero-bg">
+      <div class="blob blob-1"></div>
+      <div class="blob blob-2"></div>
+      <div class="blob blob-3"></div>
+    </div>
+    <div class="hero-content">
+      <div class="hero-avatar">
+        <div class="avatar-ring">
+          <img src="assets/avatar.JPG" alt="黄涛" class="avatar-img" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';" />
+          <div class="avatar-placeholder">TH</div>
+        </div>
+      </div>
+      <div class="hero-text">
+        <p class="hero-greeting">Hi, I'm</p>
+        <h1 class="hero-name">黄涛 <span class="name-en">Tao Huang</span></h1>
+        <p class="hero-tagline">Senior Student @ Tianjin University · LLM &amp; Diffusion Models Researcher</p>
+        <p class="hero-bio">
+          I am a senior undergraduate student at Tianjin University, supervised by
+          <a href="https://scholar.google.com/citations?user=6KeTXm4AAAAJ" target="_blank" style="color:var(--accent-2)">Prof. Bing Cao</a>.
+          My research interests lie in Large Language Models (LLM), Multimodal LLMs (MLLM), and Diffusion Models.
+          During my research internship at <strong>Tencent Hunyuan</strong>, I am working on generative models.
+        </p>
+        <div class="hero-links">
+          <!-- TODO: 填写你实际的链接，删除不需要的，取消注释需要的 -->
+          <a href="mailto:huang_tao@tju.edu.cn" class="link-badge link-email" title="Email">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+            Email
+          </a>
+          <a href="https://github.com/totalhuang" class="link-badge link-github" target="_blank" title="GitHub">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0 1 12 6.844a9.59 9.59 0 0 1 2.504.337c1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.02 10.02 0 0 0 22 12.017C22 6.484 17.522 2 12 2z"/></svg>
+            GitHub
+          </a>
+          <a href="https://scholar.google.com/citations?user=TaM4e4wAAAAJ" class="link-badge link-scholar" target="_blank" title="Google Scholar">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 24a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm0-24L0 9.5l4.838 3.94A8 8 0 0 1 12 10a8 8 0 0 1 7.162 3.44L24 9.5z"/></svg>
+            Scholar
+          </a>
+          <!-- <a href="#" class="link-badge link-cv" target="_blank" title="CV / Resume">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+            CV
+          </a> -->
+          <!-- <a href="#" class="link-badge link-twitter" target="_blank" title="Twitter / X">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+            Twitter
+          </a> -->
+          <!-- <a href="#" class="link-badge link-linkedin" target="_blank" title="LinkedIn">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg>
+            LinkedIn
+          </a>
+          <a href="#" class="link-badge link-wechat" title="WeChat">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M8.691 2.188C3.891 2.188 0 5.476 0 9.53c0 2.212 1.17 4.203 3.002 5.55a.59.59 0 0 1 .213.665l-.39 1.48c-.019.07-.048.141-.048.213 0 .163.13.295.29.295a.328.328 0 0 0 .168-.054l1.903-1.086a.864.864 0 0 1 .717-.098 10.16 10.16 0 0 0 2.837.403c.276 0 .543-.027.811-.05-.857-2.578.157-4.972 1.932-6.446 1.703-1.415 3.882-1.98 5.853-1.838-.576-3.583-4.196-6.367-8.597-6.367zm-2.065 3.53a1.13 1.13 0 0 1 1.13 1.13 1.13 1.13 0 0 1-1.13 1.13 1.13 1.13 0 0 1-1.13-1.13 1.13 1.13 0 0 1 1.13-1.13zm4.27 0a1.13 1.13 0 0 1 1.13 1.13 1.13 1.13 0 0 1-1.13 1.13 1.13 1.13 0 0 1-1.13-1.13 1.13 1.13 0 0 1 1.13-1.13zm6.137 3.27c-4.03 0-7.307 2.75-7.307 6.14 0 3.39 3.276 6.14 7.307 6.14.895 0 1.748-.131 2.548-.367a.7.7 0 0 1 .578.074l1.524.87a.266.266 0 0 0 .135.043.236.236 0 0 0 .234-.235c0-.058-.023-.112-.038-.168l-.312-1.189a.474.474 0 0 1 .172-.534C22.887 17.958 24 16.262 24 14.42c0-3.39-3.276-6.432-7.307-6.432zm-2.697 3.14a.91.91 0 0 1 .91.91.91.91 0 0 1-.91.91.91.91 0 0 1-.91-.91.91.91 0 0 1 .91-.91zm5.39 0a.91.91 0 0 1 .91.91.91.91 0 0 1-.91.91.91.91 0 0 1-.91-.91.91.91 0 0 1 .91-.91z"/></svg>
+            WeChat
+          </a> -->
+        </div>
+      </div>
+    </div>
+    <a href="#about" class="scroll-indicator" aria-label="Scroll down">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+    </a>
+  </section>
+
+  <!-- ========== ABOUT ========== -->
+  <section class="section" id="about">
+    <div class="container">
+      <h2 class="section-title"><span class="section-num">01.</span> About Me</h2>
+      <div class="about-grid">
+        <div class="about-text">
+          <p>
+            I am currently a senior undergraduate student majoring in Computer Science at <strong>Tianjin University</strong>, under the supervision of
+            <a href="https://scholar.google.com/citations?user=6KeTXm4AAAAJ" target="_blank" style="color:var(--accent-2)">Prof. Bing Cao</a>.
+            My research primarily focuses on generative AI, particularly in text-to-image and text-to-video generation.
+          </p>
+          <p>
+            In 2023–2024, I was a member of the Tianjin University Competitive Programming Team, where I actively participated in various programming contests. I am honored to have won a Silver Medal in the ICPC EC Final, which was a significant milestone in my competitive programming journey.
+          </p>
+          <p>
+            Previously, I interned at <strong>Tencent Hunyuan</strong>, where I researched RLHF (Reinforcement Learning from Human Feedback) for generative models and evaluated video generation models. My recent project, <em>MixGRPO</em>, explores unlocking efficiency in flow-based GRPO training via mixed ODE-SDE strategies.
+          </p>
+          <div class="skills-block">
+            <p class="skills-label">Research Interests:</p>
+            <div class="skills-tags">
+              <span class="tag">Large Language Models</span>
+              <span class="tag">Multimodal LLM</span>
+              <span class="tag">Diffusion Models</span>
+              <span class="tag">RLHF / GRPO</span>
+              <span class="tag">Flow Matching</span>
+            </div>
+          </div>
+        </div>
+        <div class="about-photo">
+          <div class="photo-frame">
+            <img src="assets/photo.PNG" alt="黄涛" onerror="this.parentElement.classList.add('photo-empty')" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== EDUCATION ========== -->
+  <section class="section section-alt" id="education">
+    <div class="container">
+      <h2 class="section-title"><span class="section-num">02.</span> Education</h2>
+      <div class="timeline">
+
+        <!-- Bachelor's degree -->
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <div>
+                <h3 class="tl-degree">B.Sc. in Computer Science</h3>
+                <p class="tl-school">Tianjin University (天津大学)</p>
+              </div>
+              <span class="tl-date">2022 – 2026</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Master's degree -->
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <div>
+                <h3 class="tl-degree">M.Sc. in Computer Science</h3>
+                <p class="tl-school">Tianjin University (天津大学)</p>
+              </div>
+              <span class="tl-date">2026 – 2029</span>
+            </div>
+            <div class="timeline-details">
+              <p>
+                <strong>Supervisor:</strong> Prof. Bing Cao<br>
+                <strong>Research focus:</strong> Multimodal LLM, Generative Models
+              </p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== NEWS ========== -->
+  <section class="section" id="news">
+    <div class="container">
+      <h2 class="section-title"><span class="section-num">03.</span> News & Publications</h2>
+
+      <div class="news-list" id="newsList">
+
+        <!-- ====== NEWS ITEM TEMPLATE ======
+             复制下面这个 .news-item 块来添加新条目。
+             data-modal 属性对应下方的弹窗 id，删除该属性可禁用点击展开。
+        -->
+
+        <!-- MixGRPO paper -->
+        <div class="news-item" data-modal="modal-mixgrpo">
+          <div class="news-meta">
+            <span class="news-date">2025.07</span>
+            <span class="news-badge badge-paper">Paper</span>
+          </div>
+          <div class="news-body">
+            <p class="news-title">MixGRPO: Unlocking Flow-based GRPO Efficiency with Mixed ODE-SDE</p>
+            <p class="news-venue">Tao Huang et al. · <em>arXiv preprint, 2025</em></p>
+          </div>
+          <button class="news-expand" aria-label="查看详情">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg>
+          </button>
+        </div>
+
+        <!-- Internship at Tencent Hunyuan -->
+        <div class="news-item">
+          <div class="news-meta">
+            <span class="news-date">2025.04</span>
+            <span class="news-badge badge-misc">Intern</span>
+          </div>
+          <div class="news-body">
+            <p class="news-title">Research Intern at Tencent Hunyuan</p>
+            <p class="news-venue">Working on flow-based generative models.</p>
+          </div>
+        </div>
+
+        <!-- Placeholder for future papers/awards – add below as needed -->
+        <!-- Example:
+        <div class="news-item" data-modal="modal-paper2">
+          <div class="news-meta">
+            <span class="news-date">YYYY.MM</span>
+            <span class="news-badge badge-paper">Paper</span>
+          </div>
+          <div class="news-body">
+            <p class="news-title">[论文标题]</p>
+            <p class="news-venue">[作者] · <em>[会议/期刊]</em></p>
+          </div>
+          <button class="news-expand" aria-label="查看详情">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg>
+          </button>
+        </div>
+        -->
+
+      </div>
+
+      <button class="btn-show-more" id="btnShowMore" style="display:none">Show more</button>
+    </div>
+  </section>
+
+  <!-- ========== CONTACT ========== -->
+  <section class="section section-alt" id="contact">
+    <div class="container container-narrow">
+      <h2 class="section-title centered"><span class="section-num">04.</span> Get In Touch</h2>
+      <p class="contact-desc">
+        <!-- TODO: 联系方式说明 -->
+        Feel free to reach out for collaborations, questions, or just a chat!
+      </p>
+      <div class="contact-links">
+        <a href="mailto:huang_tao@tju.edu.cn" class="btn-primary">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+          Send Email
+        </a>
+        <a href="https://github.com/totalhuang" target="_blank" class="btn-secondary">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0 1 12 6.844a9.59 9.59 0 0 1 2.504.337c1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.02 10.02 0 0 0 22 12.017C22 6.484 17.522 2 12 2z"/></svg>
+          GitHub
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer">
+    <p>Designed & Built by 黄涛 · <a href="https://github.com/totalhuang/totalhuang.github.io" target="_blank">Source</a></p>
+  </footer>
+
+  <!-- ========== MODALS (论文详情弹窗) ========== -->
+
+  <!-- Modal for MixGRPO -->
+  <div class="modal" id="modal-mixgrpo" role="dialog" aria-modal="true">
+    <div class="modal-overlay"></div>
+    <div class="modal-box">
+      <button class="modal-close" aria-label="Close">&times;</button>
+      <span class="modal-tag badge-paper">Paper</span>
+      <h3 class="modal-title">MixGRPO: Unlocking Flow-based GRPO Efficiency with Mixed ODE-SDE</h3>
+      <p class="modal-authors"><strong>Tao Huang</strong> et al.</p>
+      <p class="modal-venue"><em>arXiv preprint</em> · 2025</p>
+      <div class="modal-abstract">
+        <p class="modal-abstract-label">Abstract</p>
+        <p>
+          <!-- TODO: 粘贴 MixGRPO 论文摘要 -->
+          Although GRPO substantially enhances flow matching models in human preference alignment of image generation, methods such as FlowGRPO and DanceGRPO still exhibit inefficiency due to the necessity of sampling and optimizing over all denoising steps specified by the Markov Decision Process (MDP). In this paper, we propose MixGRPO, a novel framework that leverages the flexibility of mixed sampling strategies through the integration of stochastic differential equations (SDE) and ordinary differential equations (ODE). This streamlines the optimization process within the MDP to improve efficiency and boost performance. Specifically, MixGRPO introduces a sliding window mechanism, using SDE sampling and GRPO-guided optimization only within the window, while applying ODE sampling outside. This design confines sampling randomness to the time-steps within the window, thereby reducing the optimization overhead, and allowing for more focused gradient updates to accelerate convergence. Additionally, as time-steps beyond the sliding window are not involved in optimization, higher-order solvers are supported for faster sampling. So we present a faster variant, termed MixGRPO-Flash, which further improves training efficiency while achieving comparable performance. MixGRPO exhibits substantial gains across multiple dimensions of human preference alignment, outperforming DanceGRPO in both effectiveness and efficiency, with nearly 50% lower training time. Notably, MixGRPO-Flash further reduces training time by 71%.
+        </p>
+      </div>
+      <div class="modal-img-wrap">
+        <!-- TODO: 放论文框架图，将图片保存为 assets/mixgrpo.jpg -->
+        <img src="assets/mixgrpo.png" alt="MixGRPO Figure" onerror="this.parentElement.style.display='none'" />
+      </div>
+      <div class="modal-actions">
+        <a href="https://arxiv.org/abs/2507.21802" target="_blank" class="btn-primary btn-sm">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+          arXiv / PDF
+        </a>
+        <a href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=TaM4e4wAAAAJ&citation_for_view=TaM4e4wAAAAJ:vDijr-p_gm4C" target="_blank" class="btn-secondary btn-sm">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 24a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm0-24L0 9.5l4.838 3.94A8 8 0 0 1 12 10a8 8 0 0 1 7.162 3.44L24 9.5z"/></svg>
+          Scholar
+        </a>
+        <!-- TODO: 如果有代码仓库，填写链接 -->
+        <a href="https://github.com/Tencent-Hunyuan/MixGRPO" target="_blank" class="btn-secondary btn-sm">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0 1 12 6.844a9.59 9.59 0 0 1 2.504.337c1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.02 10.02 0 0 0 22 12.017C22 6.484 17.522 2 12 2z"/></svg>
+          Code
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
