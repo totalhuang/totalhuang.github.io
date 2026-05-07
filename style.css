@@ -607,13 +607,17 @@ img { max-width: 100%; display: block; }
   align-items: center;
   gap: 0.4rem;
   flex-shrink: 0;
-  width: 80px;
+  width: 130px;
+  border-right: 1px solid var(--border);
+  padding-right: 1rem;
+  margin-right: 0.25rem;
 }
 
 .news-date {
   font-family: var(--font-mono);
   font-size: 0.72rem;
-  color: var(--text-dim);
+  color: var(--text-muted);
+  font-weight: 500;
   white-space: nowrap;
 }
 
@@ -880,6 +884,85 @@ img { max-width: 100%; display: block; }
 }
 
 /* ============================================================
+   CAROUSEL
+   ============================================================ */
+.carousel {
+  position: relative;
+  overflow: hidden;
+}
+
+.carousel-track {
+  display: flex;
+  transition: transform 0.35s ease;
+}
+
+.carousel-slide {
+  min-width: 100%;
+}
+
+.carousel-slide img {
+  width: 100%;
+  display: block;
+}
+
+.carousel-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 2;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0,0,0,0.5);
+  color: #fff;
+  border: 1px solid rgba(255,255,255,0.15);
+  font-size: 1.2rem;
+  cursor: pointer;
+  opacity: 0;
+  transition: opacity 0.25s ease, background 0.25s ease;
+}
+
+.carousel:hover .carousel-btn {
+  opacity: 1;
+}
+
+.carousel-btn:hover {
+  background: rgba(0,0,0,0.8);
+}
+
+.carousel-prev { left: 8px; }
+.carousel-next { right: 8px; }
+
+.carousel-dots {
+  display: flex;
+  justify-content: center;
+  gap: 6px;
+  padding: 10px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  pointer-events: none;
+}
+
+.carousel-dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.4);
+  cursor: pointer;
+  pointer-events: auto;
+  transition: background 0.25s ease;
+}
+
+.carousel-dot.active {
+  background: #fff;
+}
+
+/* ============================================================
    FOOTER
    ============================================================ */
 .footer {
@@ -947,7 +1030,7 @@ img { max-width: 100%; display: block; }
     align-items: flex-start;
   }
 
-  .news-meta { width: 64px; }
+  .news-meta { width: 110px; }
   .news-date { font-size: 0.65rem; }
 
   .modal-box { padding: 1.75rem; }

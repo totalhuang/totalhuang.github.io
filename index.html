@@ -183,6 +183,25 @@
              data-modal 属性对应下方的弹窗 id，删除该属性可禁用点击展开。
         -->
 
+        <!-- DiffCap-Bench -->
+        <div class="news-item" data-modal="modal-diffcap">
+          <div class="news-meta">
+            <span class="news-date">2026.05</span>
+            <span class="news-badge badge-paper">Paper</span>
+          </div>
+          <div class="news-body">
+            <p class="news-title">DiffCap-Bench: A Comprehensive, Challenging, Robust Benchmark for Image Difference Captioning
+            </p>
+            <p class="news-venue">Yuancheng Wei, Haojie Zhang, ... <strong>Tao Huang</strong>, ...
+            · <em>arXiv preprint, 2026</em></p>
+          </div>
+          <button class="news-expand" aria-label="查看详情">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polyline points="9 18 15 12 9 6" />
+            </svg>
+          </button>
+        </div>
+
         <!-- MixGRPO paper -->
         <div class="news-item" data-modal="modal-mixgrpo">
           <div class="news-meta">
@@ -191,7 +210,7 @@
           </div>
           <div class="news-body">
             <p class="news-title">MixGRPO: Unlocking Flow-based GRPO Efficiency with Mixed ODE-SDE</p>
-            <p class="news-venue">Tao Huang et al. · <em>arXiv preprint, 2025</em></p>
+            <p class="news-venue">Junzhe Li, Yutao Cui, <strong>Tao Huang</strong> et al. · <em>arXiv preprint, 2025</em></p>
           </div>
           <button class="news-expand" aria-label="查看详情">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg>
@@ -199,15 +218,18 @@
         </div>
 
         <!-- Internship at Tencent Hunyuan -->
-        <div class="news-item">
+        <div class="news-item" data-modal="modal-inter-tencent">
           <div class="news-meta">
-            <span class="news-date">2025.04</span>
+            <span class="news-date">2025.04 - 2026.04</span>
             <span class="news-badge badge-misc">Intern</span>
           </div>
           <div class="news-body">
             <p class="news-title">Research Intern at Tencent Hunyuan</p>
             <p class="news-venue">Working on flow-based generative models.</p>
           </div>
+          <button class="news-expand" aria-label="查看详情">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg>
+          </button>
         </div>
 
         <!-- Placeholder for future papers/awards – add below as needed -->
@@ -295,6 +317,99 @@
           <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0 1 12 6.844a9.59 9.59 0 0 1 2.504.337c1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.02 10.02 0 0 0 22 12.017C22 6.484 17.522 2 12 2z"/></svg>
           Code
         </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal for DiffCap-Bench -->
+  <div class="modal" id="modal-diffcap" role="dialog" aria-modal="true">
+    <div class="modal-overlay"></div>
+    <div class="modal-box">
+      <button class="modal-close" aria-label="Close">&times;</button>
+      <span class="modal-tag badge-paper">Paper</span>
+      <h3 class="modal-title">DiffCap-Bench: A Comprehensive, Challenging, Robust Benchmark for Image Difference Captioning</h3>
+      <p class="modal-authors">Yuancheng Wei, Haojie Zhang, Linli Yao, Lei Li, Jiali Chen, <strong>Tao Huang</strong>, Yiting Lu, Duojun Huang, Xin Li, Zhao Zhong</p>
+      <p class="modal-venue"><em>arXiv preprint</em> · 2026</p>
+      <div class="modal-abstract">
+        <p class="modal-abstract-label">Abstract</p>
+        <p>
+          Image Difference Captioning (IDC) generates natural language descriptions that precisely identify differences between two images, serving as a key benchmark for fine-grained change perception, cross-modal reasoning, and image editing data construction. However, existing benchmarks lack diversity and compositional complexity, and standard lexical-overlap metrics (e.g., BLEU, METEOR) fail to capture semantic consistency or penalize hallucinations, which together prevent a comprehensive and robust evaluation of multimodal large language models (MLLMs) on IDC. To address these gaps, we introduce DiffCap-Bench, a comprehensive IDC benchmark covering ten distinct difference categories to ensure diversity and compositional complexity. Furthermore, we propose an LLM-as-a-Judge evaluation protocol grounded in human-validated Difference Lists, enabling a robust assessment of models' ability to both capture and describe visual changes. Through extensive evaluation of state-of-the-art MLLMs, we reveal significant performance gaps between proprietary and open-source models, highlight the critical importance of reasoning capability, and identify clear limitations in model scaling. Our framework also demonstrates strong alignment with human expert judgments and strong correlation with downstream image editing data construction quality. These findings establish DiffCap-Bench as both a reliable IDC evaluation framework and a practical predictor of downstream utility. The benchmark and code will be made publicly available to support further research.
+        </p>
+      </div>
+      <div class="modal-img-wrap">
+        <div class="carousel">
+          <div class="carousel-track">
+            <div class="carousel-slide">
+              <!-- TODO: 将图片保存为 assets/diffcap-bench-1.png, -2.png, -3.png 等 -->
+              <img src="assets/diffcap-bench-1.png" alt="DiffCap-Bench overview" onerror="this.style.display='none'">
+            </div>
+            <div class="carousel-slide">
+              <img src="assets/diffcap-bench-2.png" alt="DiffCap-Bench results" onerror="this.style.display='none'">
+            </div>
+            <div class="carousel-slide">
+              <img src="assets/diffcap-bench-3.png" alt="DiffCap-Bench examples" onerror="this.style.display='none'">
+            </div>
+          </div>
+          <button class="carousel-btn carousel-prev" aria-label="Previous image">‹</button>
+          <button class="carousel-btn carousel-next" aria-label="Next image">›</button>
+          <div class="carousel-dots"></div>
+        </div>
+      </div>
+      <div class="modal-actions">
+        <a href="https://arxiv.org/abs/2605.04503" target="_blank" class="btn-primary btn-sm">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+          arXiv / PDF
+        </a>
+        <!-- TODO: 填写 Google Scholar 链接 -->
+        <!-- <a href="#" target="_blank" class="btn-secondary btn-sm">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 24a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm0-24L0 9.5l4.838 3.94A8 8 0 0 1 12 10a8 8 0 0 1 7.162 3.44L24 9.5z"/></svg>
+          Scholar
+        </a> -->
+        <!-- TODO: 如果有代码仓库，填写链接 -->
+        <!-- <a href="#" target="_blank" class="btn-secondary btn-sm">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0 1 12 6.844a9.59 9.59 0 0 1 2.504.337c1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.02 10.02 0 0 0 22 12.017C22 6.484 17.522 2 12 2z"/></svg>
+          Code
+        </a> -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal for Internship at Tencent Hunyuan -->
+  <div class="modal" id="modal-inter-tencent" role="dialog" aria-modal="true">
+    <div class="modal-overlay"></div>
+    <div class="modal-box">
+      <button class="modal-close" aria-label="Close">&times;</button>
+      <span class="modal-tag badge-misc">Intern</span>
+      <h3 class="modal-title">Research Intern at Tencent Hunyuan</h3>
+      <p class="modal-venue">2025.04 – 2026.04</p>
+
+      <!-- ===== 文字描述区：在此填写实习内容 ===== -->
+      <div class="modal-abstract">
+        <p class="modal-abstract-label">Experience</p>
+        <p>
+          <!-- TODO: 在此填写实习的具体内容和感悟 -->
+          Working on flow-based generative models at Tencent Hunyuan.<br>
+          I had a wonderful and unforgettable internship experience at Tencent Hunyuan, where I met many friendly and helpful colleagues and learned a lot from them.
+        </p>
+      </div>
+
+      <div class="modal-img-wrap">
+        <div class="carousel">
+          <div class="carousel-track">
+            <div class="carousel-slide">
+              <img src="assets/inter-tencent-1.jpg" alt="Tencent Hunyuan 1" onerror="this.style.display='none'">
+            </div>
+            <div class="carousel-slide">
+              <img src="assets/inter-tencent-2.jpg" alt="Tencent Hunyuan 2" onerror="this.style.display='none'">
+            </div>
+            <div class="carousel-slide">
+              <img src="assets/inter-tencent-3.jpg" alt="Tencent Hunyuan 3" onerror="this.style.display='none'">
+            </div>
+          </div>
+          <button class="carousel-btn carousel-prev" aria-label="Previous image">‹</button>
+          <button class="carousel-btn carousel-next" aria-label="Next image">›</button>
+          <div class="carousel-dots"></div>
+        </div>
       </div>
     </div>
   </div>

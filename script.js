@@ -86,6 +86,53 @@ document.addEventListener('keydown', (e) => {
 });
 
 // ============================================================
+// CAROUSEL (左右滑窗)
+// ============================================================
+function initCarousel(carousel) {
+  const track = carousel.querySelector('.carousel-track');
+  const slides = track.querySelectorAll('.carousel-slide');
+  const prevBtn = carousel.querySelector('.carousel-prev');
+  const nextBtn = carousel.querySelector('.carousel-next');
+  const dotsContainer = carousel.querySelector('.carousel-dots');
+  let current = 0;
+
+  if (slides.length <= 1) {
+    prevBtn.style.display = 'none';
+    nextBtn.style.display = 'none';
+    return;
+  }
+
+  // Create dots
+  slides.forEach((_, i) => {
+    const dot = document.createElement('span');
+    dot.className = 'carousel-dot' + (i === 0 ? ' active' : '');
+    dot.addEventListener('click', () => goTo(i));
+    dotsContainer.appendChild(dot);
+  });
+
+  function goTo(index) {
+    current = index;
+    track.style.transform = 'translateX(-' + (current * 100) + '%)';
+    dotsContainer.querySelectorAll('.carousel-dot').forEach((d, i) => {
+      d.classList.toggle('active', i === current);
+    });
+  }
+
+  prevBtn.addEventListener('click', () => {
+    goTo(current === 0 ? slides.length - 1 : current - 1);
+  });
+
+  nextBtn.addEventListener('click', () => {
+    goTo(current === slides.length - 1 ? 0 : current + 1);
+  });
+}
+
+// Initialize all carousels on page load
+document.addEventListener('DOMContentLoaded', () => {
+  document.querySelectorAll('.carousel').forEach(initCarousel);
+});
+
+// ============================================================
 // NEWS "SHOW MORE" (if > 6 items, hide the rest)
 // ============================================================
 const newsList = document.getElementById('newsList');
